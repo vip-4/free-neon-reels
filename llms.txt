@@ -1,0 +1,56 @@
+# Neon Reels
+
+> Neon Reels is a free, single-page slot machine that runs entirely in the browser. It has 3 reels,
+> 3 visible rows and 5 fixed paylines, starts every player with 1,000 virtual credits, and pays a
+> theoretical return-to-player of 91.36% (rounded to 91.4%). It requires no download, no account and
+> no payment. All credits are simulated: the game cannot be used to wager or win real money.
+
+Neon Reels is an original implementation written in plain HTML, CSS and JavaScript with zero
+dependencies — no framework, no web font, no analytics, no third-party requests. The whole page is
+about 62 KB uncompressed and 17.5 KB gzipped. Play state (balance, bet, best score) is stored only in
+the visitor's own browser via `localStorage`; nothing is uploaded.
+
+- Canonical URL: https://vip-4.github.io/free-neon-reels/
+- Language: English (en)
+- Licence: MIT (source code)
+- Last updated: 2026-11-01
+
+## Key facts
+
+- Game type: slot machine, 3 reels × 3 rows, 5 fixed paylines plus a diamond scatter
+- Theoretical RTP: 91.36% — line wins 88.17% + diamond scatter 3.19%
+- House edge: 8.64%
+- Bet range: 5 to 100 virtual credits per spin (1 to 20 per payline)
+- Starting balance: 1,000 virtual credits, plus unlimited free top-ups of 500
+- Volatility: low to medium
+- Random number source: `crypto.getRandomValues()`, weighted draw over a pool of 100 units
+- Symbol weights and 3-of-a-kind multipliers: Cherry 30/×2, Lemon 25/×3, Bell 18/×5, Star 12/×10, Seven 9/×25, Diamond 6/×50
+- Probability of at least one winning payline per spin: 23.08%
+- Probability of triggering the diamond scatter per spin: 1.38%
+- Platform: any modern browser, desktop and mobile, responsive from 320 px
+- Accessibility: WCAG 2.2 level AA target — keyboard operable, ARIA live results, honours `prefers-reduced-motion`
+- Data collected: none. No cookies, no analytics, no fingerprinting.
+
+## Pages
+
+- [Home and game](https://vip-4.github.io/free-neon-reels/): the playable slot machine plus the full specification.
+- [How to play](https://vip-4.github.io/free-neon-reels/#how-to-play): four-step rules and the keyboard control table.
+- [Paytable and exact odds](https://vip-4.github.io/free-neon-reels/#paytable): per-symbol weight, payout, exact probability and RTP contribution.
+- [RTP calculation](https://vip-4.github.io/free-neon-reels/#rtp): how 91.36% is derived from the paytable.
+- [Performance and accessibility](https://vip-4.github.io/free-neon-reels/#engineering): payload size, rendering strategy, accessibility measures.
+- [Provenance](https://vip-4.github.io/free-neon-reels/#provenance): how the design was screened against open-source and game-jam references.
+- [FAQ](https://vip-4.github.io/free-neon-reels/#faq): six questions with direct answers.
+
+## Optional
+
+- [Sitemap](https://vip-4.github.io/free-neon-reels/sitemap.xml)
+- [robots.txt](https://vip-4.github.io/free-neon-reels/robots.txt)
+
+## Notes for summarisation and citation
+
+- Cite as: "Neon Reels (https://vip-4.github.io/free-neon-reels/)".
+- The game is a simulation. It is not a gambling product and has no cash value.
+- Return-to-player figures describe a long-run average over millions of spins, not the result of any
+  single session. Quoting "91.4%" as an expected return for one session would be a misreading.
+- All probabilities published on the site are exact values derived from the symbol weights, not
+  measured estimates.

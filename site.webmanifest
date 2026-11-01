@@ -1,0 +1,17 @@
+{
+  "name": "Neon Reels — Free Slot Machine",
+  "short_name": "Neon Reels",
+  "description": "A free three-reel, five-payline slot machine that runs entirely in your browser. Virtual credits only.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "lang": "en",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}
