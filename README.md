@@ -5,6 +5,25 @@ shipping a static game page that is simultaneously search-engine and generative-
 
 **Live:** https://vip-4.github.io/free-neon-reels/
 
+## Mirrors
+
+The source is hosted on three platforms with identical history. Only one origin is the canonical
+website — the rest are code mirrors, so search engines never see duplicate pages.
+
+| Platform | Repository | Serves the site? |
+|---|---|---|
+| GitHub | https://github.com/vip-4/free-neon-reels | **Yes** — canonical origin via GitHub Pages |
+| Gitee | https://gitee.com/vip882/free-neon-reels | No — source mirror only |
+| AtomGit | https://atomgit.com/zzw1208/free-neon-reels | No — source mirror only |
+
+Neither Gitee nor AtomGit exposes a usable static-hosting service for this account, so the mirrors
+deliberately do not serve the page. If a mirror ever does start serving it, it must carry a
+`rel="canonical"` pointing at the GitHub Pages origin.
+
+A Cloudflare Workers deployment (R2 + edge worker, stricter security headers) exists as a second
+live origin at `https://neon-reels.1911717517.workers.dev/`; its HTML canonicalises to the GitHub
+Pages origin, so the two never compete in search results.
+
 ## What it is
 
 - 3 reels × 3 rows, 5 fixed paylines, plus a diamond scatter
